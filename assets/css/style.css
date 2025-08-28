@@ -1,29 +1,24 @@
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background: #fafafa;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-}
-
-header, nav {
+.about-header {
   text-align: center;
-  margin: 1rem;
+  margin-top: 2rem;
 }
-
-nav a {
-  margin: 0 0.5rem;
-  text-decoration: none;
-  color: #007acc;
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
 }
-
-section {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem 1rem;
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
 }
-
-h1, h2, h3 {
-  color: #444;
+.partner {
+  text-align: center;
+  max-width: 200px;
+}
+.partner img {
+  width: 100px;
+  margin-bottom: 0.5rem;
 }

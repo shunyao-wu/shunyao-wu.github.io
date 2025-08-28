@@ -1,0 +1,29 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Ruby / Bundler
+.bundle/
+vendor/
+pkg/
+log/
+tmp/
+
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Node (if you add frontend tooling later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# By choice: ignore Gemfile.lock if you don’t want to lock versions
+# (I recommend you keep Gemfile.lock committed for reproducibility)
+# Gemfile.lock
