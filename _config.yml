@@ -2,6 +2,6 @@ title: Shunyao (Vincent) Wu
 description: Personal website and portfolio
 theme: minima   # or "minimal-mistakes-jekyll" if you want more features
 baseurl: ""     # keep empty
-url: "https://vincentw4499.github.io"
+url: "https://shunyao-wu.github.io"
 plugins:
   - jekyll-feed

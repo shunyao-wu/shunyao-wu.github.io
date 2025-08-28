@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hello! My name is **Your Name**.  
+Hello! My name is **Shunyao (Vincent) Wu**.  
 
 I hold a PhD in Electrical Engineering and have strong experience in wireless systems and AI.  
 Currently, I am transitioning into **Data Engineering and Machine Learning**.  
