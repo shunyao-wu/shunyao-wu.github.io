@@ -1,6 +1,6 @@
 title: Shunyao Wu
 description: Personal introduction page
-theme: minima   # or "minimal-mistakes-jekyll" if you want more features
+theme: null   # or "minimal-mistakes-jekyll" if you want more features
 baseurl: ""     # keep empty
 url: "https://shunyao-wu.github.io"
 plugins:
