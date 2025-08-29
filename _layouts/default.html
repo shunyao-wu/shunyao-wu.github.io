@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <script src="/assets/js/theme-toggle.js" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+        <!-- 左边 Logo / 名字 -->
+        <div class="logo">
+            Shunyao Wu
+        </div>
+        
+        <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/projects/">Projects</a>
+        <a href="/publications/">Publications</a>
+        </div>
+
+        <div class="nav-icons">
+            <a href="https://www.linkedin.com/in/shunyao-wu/" target="_blank">
+                <img src="{{ '/assets/img/LI-In-Bug.png' | relative_url }}" alt="LinkedIn" class="icon-logo">
+            </a>
+            <button id="theme-toggle" class="toggle-btn">🌙 Dark Mode</button>
+        </div>
+        
+    </div>
+  </nav>
+
+  <!-- Main content -->
+<main>
+    <div class="container">
+        <div class="content-box">
+            {{ content }}
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

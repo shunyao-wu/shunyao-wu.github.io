@@ -1,0 +1,218 @@
+/* Default colors (light mode) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark mode colors */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Navigation bar */
+nav {
+  background: var(--bg-color);
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* 容器：左中右三部分 */
+.nav-container {
+  max-width: 1200px;   /* 宽度限制在 1200px */
+  margin: 0 auto;      /* 居中 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* 中间菜单：横排 */
+.nav-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* 右边 icons + 按钮 */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;   /* 控制间距 */
+}
+
+.toggle-btn {
+  margin-left: 2rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--text-color);
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+/* Hero Section (for index.html) */
+.hero {
+  display: flex;
+  align-items: flex-start;   /* ✅ 顶部对齐，而不是垂直居中 */
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;          /* 左对齐文字 */
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  margin-bottom: 1rem;
+  line-height: 1.6;          /* 舒服的行距 */
+}
+
+.hero-image {
+  flex-shrink: 0;            /* 防止图片被压缩 */
+}
+
+.hero-image img {
+  max-width: 350px;          /* 控制头像大小 */
+  height: auto;
+  border-radius: 10px;       /* 圆角，和 Andrew Ng 风格类似 */
+  display: block;
+}
+
+
+.content-box {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background: var(--bg-color);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: block;        /* 确保不是 flex 或 grid */
+  text-align: left;      /* 文字靠左对齐 */
+}
+.icon-logo {
+  width: 24px;      /* 控制大小 */
+  height: 24px;
+  margin-left: 1rem;
+  vertical-align: middle;
+  cursor: pointer;
+}
+/* 默认浅色模式：用 dark 版 logo（黑色） */
+.github-logo {
+  content: url("/assets/img/github-mark.svg");
+  width: 24px;
+  height: 24px;
+}
+
+/* 深色模式：换成白色 logo */
+body.dark-mode .github-logo {
+  content: url("/assets/img/github-mark-white.svg");
+}
+/* 通用容器 */
+.container {
+  max-width: 1200px;  /* 页面主体最大宽度 */
+  margin: 0 auto;     /* 左右居中 */
+  padding: 0 2rem;    /* 给两边留一点内边距，避免文字贴边 */
+}
+.section-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 3rem auto;
+  max-width: 1300px;
+}
+
+/* 标题下面的细线 */
+.section-box {
+  max-width: 1200px;
+  margin: 4rem auto 2rem;   /* 上下间距：和上面拉远，和下面紧凑 */
+  padding: 0 2rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;   /* 标题和下划线的间距缩小 */
+}
+
+.section-underline {
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 1.5rem;      /* 顶部距离去掉，下面留点空间 */
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--bg-color);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;          /* 确保圆角应用到图片 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;         /* 图片裁剪适配 */
+  border-bottom: 1px solid #ddd;
+}
+
+.card h3 {
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+
+.card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.card a {
+  display: inline-block;
+  margin: 0 1rem 1.5rem;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
