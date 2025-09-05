@@ -120,23 +120,28 @@ nav .logo {
   text-align: left;      /* 文字靠左对齐 */
 }
 .icon-logo {
-  width: 24px;      /* 控制大小 */
+  width: 28px;      /* 控制大小 */
   height: 24px;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   vertical-align: middle;
   cursor: pointer;
 }
-/* 默认浅色模式：用 dark 版 logo（黑色） */
-.github-logo {
-  content: url("/assets/img/github-mark.svg");
-  width: 24px;
-  height: 24px;
+
+/* 默认浅色模式：黑色图标 */
+.scholar-logo {
+  content: url("/assets/img/google-scholar_white.svg");
+  width: 28px;
+  height: 28px;
+  margin-left: 4px;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
-/* 深色模式：换成白色 logo */
-body.dark-mode .github-logo {
-  content: url("/assets/img/github-mark-white.svg");
+/* 深色模式：白色图标 */
+body.dark-mode .scholar-logo {
+  content: url("/assets/img/google-scholar_blk_new.svg");
 }
+
 /* 通用容器 */
 .container {
   max-width: 1200px;  /* 页面主体最大宽度 */
