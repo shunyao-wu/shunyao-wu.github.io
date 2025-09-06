@@ -295,3 +295,16 @@ a.pub-link:hover .pub-card {
     border-bottom: 1px solid #ddd;
   }
 }
+/* ---------------------------
+   Override GitHub Pages (minima) link styles for pub-cards
+---------------------------- */
+.pub-link {
+  text-decoration: none !important;  /* 去掉下划线 */
+  color: inherit !important;         /* 保持原本颜色 */
+  display: block;                    /* 整个区域可点击 */
+}
+
+.pub-link:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
